@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seonjae Yun — Neuroscience × Healthcare Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
 *, *::before, *::after {
   margin: 0;
@@ -14,9 +14,9 @@
 
 /* ── 폰트 ── */
 :root {
-  --font-body: 'Lora', Georgia, serif;
-  --font-display: 'Playfair Display', serif;
-  --font-mono: 'DM Mono', monospace;
+  --font-body: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
+  --font-display: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
+  --font-mono: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
 
   --page-padding: 3.5rem;
   --max-width: 1200px;
@@ -91,6 +91,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   transition: background 0.4s, color 0.4s;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 /* ── NAV ── */
@@ -113,9 +115,9 @@ nav {
 .nav-name {
   font-family: var(--font-display);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--color-gold);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 
 .nav-right {
@@ -233,9 +235,10 @@ nav {
 
 .hero-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.65rem;
+  font-weight: 600;
   color: var(--color-accent);
-  letter-spacing: 0.26em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-bottom: 1.4rem;
   opacity: 0;
@@ -245,16 +248,16 @@ nav {
 .hero-name {
   font-family: var(--font-display);
   font-size: clamp(3rem, 6vw, 5.2rem);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 0.98;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   margin-bottom: 0.4rem;
   opacity: 0;
   animation: fadeUp 0.8s ease forwards 0.35s;
 }
 
 .hero-name em {
-  font-style: italic;
+  font-style: normal;
   color: var(--color-accent);
   display: block;
 }
@@ -270,9 +273,10 @@ nav {
 
 .hero-tag {
   font-family: var(--font-mono);
-  font-size: 0.63rem;
+  font-size: 0.7rem;
+  font-weight: 600;
   color: var(--color-gold-2);
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   opacity: 0;
@@ -280,7 +284,7 @@ nav {
 }
 
 .hero-desc {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-ink-muted);
   line-height: 1.9;
   max-width: 440px;
@@ -291,7 +295,7 @@ nav {
 
 .hero-desc strong {
   color: var(--color-ink);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .hero-badges {
@@ -409,22 +413,23 @@ nav {
 
 .sec-label {
   font-family: var(--font-mono);
-  font-size: 0.57rem;
+  font-size: 0.62rem;
+  font-weight: 600;
   color: var(--color-accent);
-  letter-spacing: 0.24em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-bottom: 0.65rem;
 }
 
 .sec-title {
   font-family: var(--font-display);
-  font-size: clamp(1.7rem, 2.8vw, 2.6rem);
-  font-weight: 400;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 700;
   line-height: 1.15;
 }
 
 .sec-title em {
-  font-style: italic;
+  font-style: normal;
   color: var(--color-gold);
 }
 
@@ -461,7 +466,8 @@ nav {
 
 .pos-title {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .pos-body {
@@ -505,7 +511,7 @@ nav {
 .proj-title {
   font-family: var(--font-display);
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 0.35rem;
   transition: color 0.2s;
 }
@@ -608,7 +614,8 @@ nav {
 
 .skill-name {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  font-weight: 700;
   margin-bottom: 0.9rem;
 }
 
@@ -664,7 +671,8 @@ nav {
 
 .res-title {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
   line-height: 1.3;
 }
@@ -705,7 +713,8 @@ nav {
 
 .bridge-title {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  font-weight: 700;
   margin-bottom: 0.45rem;
 }
 
@@ -745,6 +754,7 @@ nav {
 .edu-school {
   font-family: var(--font-display);
   font-size: 1.15rem;
+  font-weight: 700;
   margin-bottom: 0.2rem;
 }
 
@@ -789,13 +799,13 @@ nav {
 .contact-lead {
   font-family: var(--font-display);
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.3;
   margin-bottom: 1.75rem;
 }
 
 .contact-lead em {
-  font-style: italic;
+  font-style: normal;
   color: var(--color-accent);
 }
 
@@ -1007,8 +1017,8 @@ footer {
       <span class="badge badge-d" data-ko="웨어러블 헬스" data-en="Wearable Health">웨어러블 헬스</span>
     </div>
     <div class="hero-contacts">
-      <div class="hc"><span class="lbl">Email</span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2556564c514452444140654248444c490b464a48">[email&#160;protected]</a></div>
-      <div class="hc"><span class="lbl">GitHub</span>github.com/ssitaqueen</div>
+      <div class="hc"><span class="lbl">Email</span><a href="https://mail.google.com/mail/?view=cm&to=ssitawade@gmail.com" target="_blank" rel="noopener">ssitawade@gmail.com</a></div>
+      <div class="hc"><span class="lbl">GitHub</span><a href="https://github.com/ssitaqueen" target="_blank" rel="noopener">github.com/ssitaqueen</a></div>
       <div class="hc"><span class="lbl" data-ko="위치" data-en="Location">위치</span>Seoul, Korea</div>
       <div class="hc"><span class="lbl">GPA</span>4.01 / 4.5 · Cum Laude</div>
     </div>
@@ -1206,8 +1216,8 @@ footer {
       <p class="contact-lead" data-ko="헬스케어와 뇌과학의 접점에서<br><em>새로운 것</em>을 만들고 싶으신가요?" data-en="Want to build something new at the intersection of<br>healthcare and <em>neuroscience</em>?">헬스케어와 뇌과학의 접점에서<br><em>새로운 것</em>을 만들고 싶으신가요?</p>
       <p class="contact-note" data-ko="헬스케어 스타트업, 디지털 헬스 서비스, 바이오 데이터 분석 포지션에 관심이 많습니다. 뇌과학·인지과학 도메인 지식이 필요한 개발 역할이라면 언제든지 연락주세요." data-en="I'm interested in healthcare startups, digital health services, and bio-data analysis roles. If you need a developer with neuroscience / cognitive science domain knowledge, feel free to reach out anytime.">헬스케어 스타트업, 디지털 헬스 서비스, 바이오 데이터 분석 포지션에 관심이 많습니다.</p>
       <div class="c-rows">
-        <div class="c-row"><span class="c-key">Email</span><span class="c-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8efdfde7faeff9efeaebcee9e3efe7e2a0ede1e3">[email&#160;protected]</a></span></div>
-        <div class="c-row"><span class="c-key">GitHub</span><span class="c-val">github.com/ssitaqueen</span></div>
+        <div class="c-row"><span class="c-key">Email</span><span class="c-val"><a href="https://mail.google.com/mail/?view=cm&to=ssitawade@gmail.com" target="_blank" rel="noopener">ssitawade@gmail.com</a></span></div>
+        <div class="c-row"><span class="c-key">GitHub</span><span class="c-val"><a href="https://github.com/ssitaqueen" target="_blank" rel="noopener">github.com/ssitaqueen</a></span></div>
         <div class="c-row"><span class="c-key">Phone</span><span class="c-val">+82) 01020763969</span></div>
         <div class="c-row"><span class="c-key">Location</span><span class="c-val">Seoul, Korea</span></div>
       </div>
